@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>BUC Phones & Gadgets | Owerri's Ultimate Premium Atelier | Accessories</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="BUC Phones & Gadgets – Owerri's premium atelier for authentic iPhones, Samsung, official accessories, and luxury wearables. Be Loyal to You. Fast delivery, long warranty.">
+    <meta name="keywords" content="BUC phones Owerri, iPhone 16, Samsung gadgets, premium accessories, tech store Imo">
+    <meta name="author" content="BUC Phones & Gadgets">
+    <meta property="og:title" content="BUC Phones & Gadgets – Premium Tech Atelier Owerri">
+    <meta property="og:description" content="Authentic devices, luxury accessories, white-glove service. Be Loyal to You.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Google Fonts + Tailwind + Font Awesome + Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'jakarta': ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        'buc-blue': '#0066cc',
+                        'buc-dark': '#0a2540',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+        @keyframes shimmer {
+            0% { background-position: -200%; }
+            100% { background-position: 200%; }
+        }
+        @keyframes loadProgress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        .animate-shimmer {
+            background: linear-gradient(135deg, #FFFFFF, #e0b3ff, #0066cc);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shimmer 2s infinite linear;
+        }
+        .loader-progress-bar {
+            animation: loadProgress 1.8s ease forwards;
+        }
+        /* fix review swiper overflow on mobile */
+        .reviewSwiper {
+            overflow: visible !important;
+            width: 100%;
+        }
+        .reviewSwiper .swiper-wrapper {
+            width: 100%;
+        }
+        .review-slide {
+            height: auto;
+            width: 100%;
+        }
+        /* ensure map container is fully responsive */
+        .map-container {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 32px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 320px;
+            display: block;
+            border: 0;
+        }
+        @media (max-width: 640px) {
+            .map-container iframe {
+                height: 250px;
+            }
+        }
+        /* swiper arrows custom */
+        .swiper-button-next, .swiper-button-prev {
+            background: white !important;
+            border-radius: 100% !important;
+            width: 44px !important;
+            height: 44px !important;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 18px !important;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .review-pagination .swiper-pagination-bullet-active {
+            background: #0066cc !important;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0,102,204,0.15);
+        }
+        .floating-badge {
+            background: white;
+            border-radius: 40px;
+            padding: 8px 16px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        /* ensure no horizontal overflow on any container */
+        body {
+            overflow-x: hidden;
+        }
+        .container, .max-w-6xl, .max-w-7xl {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="font-jakarta bg-white text-buc-dark overflow-x-hidden scroll-smooth">
+
+<!-- PREMIUM PRELOADER -->
+<div id="preloader" class="fixed inset-0 z-[10000] bg-gradient-to-br from-[#0b2b5c] to-[#020d1c] flex items-center justify-center transition-all duration-1000 ease-in-out">
+    <div class="text-center px-4">
+        <div class="text-6xl md:text-7xl font-extrabold tracking-[0.2em] animate-shimmer">BUC</div>
+        <div class="text-white tracking-wider mt-4 text-sm md:text-base">Phones & Gadgets • Accessories</div>
+        <div class="w-48 md:w-56 h-1 bg-white/20 rounded-full mt-8 mx-auto overflow-hidden">
+            <div class="loader-progress-bar h-full bg-blue-400 w-0"></div>
+        </div>
+        <p class="text-blue-200 mt-5 font-light text-sm">Be Loyal to You — Luxury essentials</p>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-[1000] bg-white/90 backdrop-blur-md border-b border-buc-blue/20 shadow-sm px-4 md:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
+        <div class="flex items-baseline gap-2">
+            <span class="text-2xl font-extrabold bg-gradient-to-r from-buc-blue to-blue-400 bg-clip-text text-transparent">BUC</span>
+            <span class="text-xs font-medium bg-blue-50 text-buc-blue px-2 py-1 rounded-full">Phones & Gadgets</span>
+        </div>
+        <div class="md:hidden text-buc-blue text-2xl cursor-pointer" id="mobileMenuIcon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="hidden md:flex gap-6 items-center" id="navLinks">
+            <li><a href="#home" class="font-semibold text-gray-700 hover:text-buc-blue transition">Home</a></li>
+            <li><a href="#gallery" class="font-semibold text-gray-700 hover:text-buc-blue transition">Gallery</a></li>
+            <li><a href="#reviewsPremium" class="font-semibold text-gray-700 hover:text-buc-blue transition">Reviews</a></li>
+            <li><a href="#accessories" class="font-semibold text-gray-700 hover:text-buc-blue transition">Accessories</a></li>
+            <li><a href="#contact" class="font-semibold text-gray-700 hover:text-buc-blue transition">Visit Us</a></li>
+            <li><a href="#contact" class="bg-buc-blue text-white px-4 py-2 rounded-full hover:bg-blue-800 transition flex items-center gap-2"><i class="fab fa-whatsapp"></i> Connect</a></li>
+        </ul>
+    </div>
+    <ul class="mobile-menu hidden flex-col items-center gap-4 mt-4 bg-white/95 backdrop-blur-lg rounded-3xl py-4" id="mobileNavLinks">
+        <li><a href="#home" class="font-semibold text-gray-700 hover:text-buc-blue">Home</a></li>
+        <li><a href="#gallery" class="font-semibold text-gray-700 hover:text-buc-blue">Gallery</a></li>
+        <li><a href="#reviewsPremium" class="font-semibold text-gray-700 hover:text-buc-blue">Reviews</a></li>
+        <li><a href="#accessories" class="font-semibold text-gray-700 hover:text-buc-blue">Accessories</a></li>
+        <li><a href="#contact" class="font-semibold text-gray-700 hover:text-buc-blue">Visit Us</a></li>
+        <li><a href="#contact" class="bg-buc-blue text-white px-5 py-2 rounded-full"><i class="fab fa-whatsapp"></i> Connect</a></li>
+    </ul>
+</nav>
+
+<main id="mainContent" class="opacity-0 transition-opacity duration-1000">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative overflow-hidden py-12 md:py-20 bg-cover bg-center" style="background-image: url('images/1718.jpg'); background-size: cover; background-position: center 30%;">
+        <div class="absolute inset-0 bg-gradient-to-br from-black/60 to-black/40 z-0"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 py-6 md:py-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center text-center lg:text-left">
+                <div data-aos="fade-up">
+                    <div class="inline-block bg-buc-blue/90 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-5"><i class="fas fa-crown mr-1"></i> Owerri's #1 Premium Atelier</div>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">BUC Phones & <span class="text-sky-300">Gadgets</span></h1>
+                    <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border-l-4 border-sky-300 px-4 py-2 rounded-full text-white text-sm md:text-base mt-4 mx-auto lg:mx-0">
+                        <i class="fas fa-heart text-sky-300"></i> Be Loyal to You — Trust, Craft, Excellence
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-start gap-3 mt-5">
+                        <div class="text-yellow-400 text-lg"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <span class="text-white text-2xl md:text-3xl font-bold">4.8</span>
+                        <span class="text-sky-200">(246+ reviews)</span>
+                    </div>
+                    <p class="text-white text-base md:text-lg max-w-md mx-auto lg:mx-0 mt-4 drop-shadow">Your premium destination for authentic iPhones, Samsung, official accessories, and luxury wearables. Unmatched warranty, express delivery, white-glove concierge.</p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
+                        <a href="#contact" class="bg-gradient-to-r from-blue-800 to-buc-blue text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition flex items-center gap-2"><i class="fab fa-whatsapp"></i> Concierge Chat</a>
+                        <a href="#reviewsPremium" class="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-buc-blue transition"><i class="fas fa-gem"></i> Explore Stories</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="relative mt-8 lg:mt-0">
+                    <div class="bg-gradient-to-tr from-buc-blue/5 to-transparent p-4 rounded-[3rem]">
+                        <img src="images/buca.png" class="w-full rounded-[3rem] shadow-2xl object-contain" alt="BUC Premium Device">
+                    </div>
+                    <div class="floating-badge absolute -bottom-2 right-2 md:right-0 lg:right-[-10px] md:bottom-5 flex items-center gap-2 text-sm md:text-base"><i class="fas fa-truck-fast text-buc-blue"></i> Free Delivery Owerri + Accessories</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS COUNTERS -->
+    <section class="py-10 bg-white">
+        <div class="max-w-6xl mx-auto px-5 flex flex-wrap justify-center gap-8 md:gap-12 text-center">
+            <div data-aos="zoom-in"><div class="text-4xl md:text-5xl font-extrabold text-buc-blue" id="ratingCount">4.8</div><p class="mt-1">★★★★★ Rating</p></div>
+            <div data-aos="zoom-in" data-aos-delay="100"><div class="text-4xl md:text-5xl font-extrabold text-buc-blue" id="reviewCount">246</div><p>Happy Reviews</p></div>
+            <div data-aos="zoom-in" data-aos-delay="200"><div class="text-4xl md:text-5xl font-extrabold text-buc-blue" id="yearCount">5+</div><p>Years Excellence</p></div>
+            <div data-aos="zoom-in" data-aos-delay="300"><div class="text-4xl md:text-5xl font-extrabold text-buc-blue" id="deliveryCount">2K+</div><p>Devices & Accessories Delivered</p></div>
+        </div>
+    </section>
+
+    <!-- POPULAR TIMES + SERVICES -->
+    <section class="bg-blue-50/40 py-12">
+        <div class="max-w-6xl mx-auto px-5">
+            <h2 class="text-2xl md:text-3xl font-bold" data-aos="fade-up">📊 Premium Pulse · Popular Hours</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="glass-card p-5 md:p-6 rounded-3xl" data-aos="fade-right">
+                    <h3 class="font-bold text-xl"><i class="fas fa-chart-line text-buc-blue"></i> Weekly Footfall</h3>
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between"><span>Monday</span><span>Moderate</span></div><div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-buc-blue w-[55%] rounded-full"></div></div>
+                        <div class="flex justify-between"><span>Wednesday (Peak)</span><span>Very Busy</span></div><div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-blue-500 w-[92%] rounded-full"></div></div>
+                        <div class="flex justify-between"><span>Friday</span><span>Busy</span></div><div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-buc-blue w-[78%] rounded-full"></div></div>
+                        <div class="flex justify-between"><span>Saturday</span><span>High</span></div><div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-buc-blue w-[85%] rounded-full"></div></div>
+                    </div>
+                    <p class="mt-4 text-sm"><i class="fas fa-clock"></i> Best times to visit: Tue 10am - 2pm (exclusive service)</p>
+                </div>
+                <div class="glass-card p-5 md:p-6 rounded-3xl" data-aos="fade-left">
+                    <h3 class="font-bold text-xl"><i class="fas fa-concierge-bell"></i> White‑Glove Services</h3>
+                    <ul class="mt-3 space-y-2 text-sm md:text-base">
+                        <li><i class="fas fa-check-circle text-buc-blue"></i> In-store consultation & gadget bar</li>
+                        <li><i class="fas fa-check-circle text-buc-blue"></i> Premium accessories (cases, chargers, audio)</li>
+                        <li><i class="fas fa-check-circle text-buc-blue"></i> Same-day delivery (Owerri metro)</li>
+                        <li><i class="fas fa-check-circle text-buc-blue"></i> iPhone 16 Series / Samsung S24 Ultra / Gadgets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESSORIES SHOWCASE -->
+    <section id="accessories" class="py-12" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-5 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold"><i class="fas fa-magic text-buc-blue"></i> BUC Accessories · Elevate Your Gear</h2>
+            <p class="text-gray-600 mt-1">Official cases, GaN chargers, premium audio & exclusive leather goods</p>
+            <div class="flex flex-wrap justify-center gap-5 mt-8">
+                <div class="bg-white rounded-3xl p-5 w-36 md:w-44 shadow-md border border-buc-blue/10 text-center"><i class="fas fa-mobile-alt text-3xl text-buc-blue"></i><h4 class="font-bold mt-2">Magnetic Cases</h4><span class="text-xs">Originals</span></div>
+                <div class="bg-white rounded-3xl p-5 w-36 md:w-44 shadow-md border border-buc-blue/10 text-center"><i class="fas fa-bolt text-3xl text-buc-blue"></i><h4 class="font-bold mt-2">45W GaN Chargers</h4><span class="text-xs">Ultra‑fast</span></div>
+                <div class="bg-white rounded-3xl p-5 w-36 md:w-44 shadow-md border border-buc-blue/10 text-center"><i class="fas fa-headphones text-3xl text-buc-blue"></i><h4 class="font-bold mt-2">Hi-Res Audio</h4><span class="text-xs">Sony|JBL</span></div>
+                <div class="bg-white rounded-3xl p-5 w-36 md:w-44 shadow-md border border-buc-blue/10 text-center"><i class="fas fa-watch text-3xl text-buc-blue"></i><h4 class="font-bold mt-2">Smart Wearables</h4><span class="text-xs">Apple|Samsung</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SWIPER -->
+    <section id="gallery" class="py-12">
+        <div class="max-w-6xl mx-auto px-5">
+            <h2 class="text-2xl md:text-3xl font-bold" data-aos="fade-up">📸 Inside BUC · Gallery of Prestige</h2>
+            <div class="swiper gallerySwiper mt-6 rounded-3xl overflow-hidden" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/buca2.png" class="w-full h-64 md:h-72 object-cover rounded-3xl" alt="iPhone display"></div>
+                    <div class="swiper-slide"><img src="images/buca3.png" class="w-full h-64 md:h-72 object-cover rounded-3xl" alt="Samsung Tab"></div>
+                    <div class="swiper-slide"><img src="images/buca4.png" class="w-full h-64 md:h-72 object-cover rounded-3xl" alt="Customer support"></div>
+                    <div class="swiper-slide"><img src="images/buca5.png" class="w-full h-64 md:h-72 object-cover rounded-3xl" alt="Gadget corner"></div>
+                    <div class="swiper-slide"><img src="images/buca6.png" class="w-full h-64 md:h-72 object-cover rounded-3xl" alt="Accessories"></div>
+                    <div class="swiper-slide"><img src="images/buca7.png" class="w-full h-64 md:h-72 object-cover rounded-3xl" alt="Premium accessories"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS CAROUSEL - FIXED MOBILE OVERFLOW -->
+    <section id="reviewsPremium" class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-5 overflow-hidden">
+            <div data-aos="fade-up"><h2 class="text-2xl md:text-3xl font-bold">⭐ Voice of Excellence · 246 voices & counting</h2></div>
+            <div class="flex flex-wrap justify-center gap-2 my-6" data-aos="fade-up">
+                <button class="filter-chip active bg-white border border-blue-200 px-4 py-1.5 rounded-full text-sm font-medium transition-all" data-filter="all">All reviews</button>
+                <button class="filter-chip bg-white border border-blue-200 px-4 py-1.5 rounded-full text-sm font-medium" data-filter="iphone 16">iPhone 16 Series</button>
+                <button class="filter-chip bg-white border border-blue-200 px-4 py-1.5 rounded-full text-sm font-medium" data-filter="gadget plug">Gadgets & Accessories</button>
+                <button class="filter-chip bg-white border border-blue-200 px-4 py-1.5 rounded-full text-sm font-medium" data-filter="warranty">Premium Warranty</button>
+            </div>
+            <!-- review swiper container with proper overflow handling -->
+            <div class="swiper reviewSwiper w-full overflow-visible py-2 pb-12">
+                <div class="swiper-wrapper" id="reviewSlidesWrapper"></div>
+                <div class="swiper-pagination review-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="text-center text-gray-500 text-sm mt-2"><i class="fas fa-arrow-left"></i> Swipe to discover real premium experiences <i class="fas fa-arrow-right"></i></div>
+        </div>
+    </section>
+
+    <!-- CONTACT + MAP - FIXED RESPONSIVE MAP -->
+    <section id="contact" class="py-12 bg-gradient-to-br from-blue-50 to-white">
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" data-aos="fade-up">
+                <div>
+                    <div class="inline-block bg-blue-100 text-buc-blue px-4 py-1.5 rounded-full text-sm"><i class="fas fa-location-dot"></i> Flagship Boutique</div>
+                    <h3 class="text-2xl md:text-3xl font-bold mt-3">49 Tetlow Rd, Owerri</h3>
+                    <p class="mt-3"><i class="fas fa-phone-alt text-buc-blue"></i> <strong>+234 708 777 6491</strong></p>
+                    <p><i class="fas fa-clock text-buc-blue"></i> Open today: 9am – 6pm (Wed till 6pm) | Closed Sunday</p>
+                    <p><i class="fas fa-map-pin text-buc-blue"></i> F2QM+5V Owerri, Imo</p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <a href="https://maps.google.com/?q=49+Tetlow+Rd+Owerri" target="_blank" class="bg-buc-blue text-white px-5 py-2.5 rounded-full font-semibold flex items-center gap-2"><i class="fas fa-directions"></i> Get Directions</a>
+                        <a href="sms:+2347087776491?body=Hi%20BUC%2C%20please%20send%20me%20the%20store%20location%20at%2049%20Tetlow%20Rd%20Owerri" class="border border-buc-blue text-buc-blue px-5 py-2.5 rounded-full font-semibold flex items-center gap-2"><i class="fas fa-mobile-alt"></i> Send location to phone</a>
+                    </div>
+                </div>
+                <!-- Responsive map container -->
+                <div class="map-container w-full rounded-3xl overflow-hidden shadow-xl">
+                    <iframe src="https://maps.google.com/?q=49+Tetlow+Rd+Owerri&output=embed" width="100%" height="320" style="border:0;" allowfullscreen loading="lazy" title="BUC flagship store map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-8 text-center">
+        <p><i class="fas fa-gem"></i> BUC Phones & Gadgets · Accessories Atelier</p>
+        <p class="text-sm mt-2">✦ Be Loyal to You ✦ | Long warranty · Certified authentic · Premium delivery across Imo</p>
+        <p class="text-xs mt-3">© 2025 — Where luxury meets trust · #1 Tech Destination Owerri</p>
+    </footer>
+</main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    // PRELOADER & AOS
+    const preloader = document.getElementById('preloader');
+    const main = document.getElementById('mainContent');
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            preloader.classList.add('opacity-0', 'invisible');
+            main.style.opacity = '1';
+        }, 2000);
+        setTimeout(() => preloader.style.display = 'none', 2800);
+        AOS.init({ duration: 800, once: false, mirror: false });
+        initGallerySwiper();
+        initReviewCarousel();
+        animateStats();
+
+        // Mobile menu toggle
+        const mobileIcon = document.getElementById('mobileMenuIcon');
+        const mobileNav = document.getElementById('mobileNavLinks');
+        if (mobileIcon) {
+            mobileIcon.addEventListener('click', () => {
+                mobileNav.classList.toggle('hidden');
+            });
+        }
+        document.querySelectorAll('#mobileNavLinks a').forEach(link => {
+            link.addEventListener('click', () => mobileNav.classList.add('hidden'));
+        });
+    });
+
+    function initGallerySwiper() {
+        new Swiper('.gallerySwiper', {
+            loop: true, autoplay: { delay: 2800, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            slidesPerView: 1, breakpoints: { 768: { slidesPerView: 2 } }
+        });
+    }
+
+    const premiumReviews = [
+        { name: "United Military", rating: 5, date: "2 months ago", text: "Am a returning customer. I love their services and quality phones. BUC offers authentic iPhones and even premium cases. I keep buying from them.", tags: ["all", "warranty"], ownerRes: "Thank you for your loyalty! We serve with excellence." },
+        { name: "Emmanuel Ihuoma", rating: 5, date: "a year ago", text: "I bought both iPad and Samsung Tab from this brand. Accessories included original covers. The service quality is commendable — truly premium.", tags: ["all", "gadget plug"], ownerRes: "Thanks Emmanuel ✨ Loyalty appreciated" },
+        { name: "Emma Nuel", rating: 5, date: "2 months ago", text: "First time here and trust me their warranty is long, they even replace defective accessories. Be loyal to you? BUC lives by it. Definitely coming back.", tags: ["all", "warranty"], ownerRes: "Great to have you in our family." },
+        { name: "Chidi Obi", rating: 5, date: "1 month ago", text: "iPhone 16 Pro Max available at best price. The gadget plug in Owerri! They also have genuine MagSafe chargers. Fast delivery, superior staff.", tags: ["all", "iphone 16", "gadget plug"], ownerRes: "We appreciate the shoutout! Accessories matter." },
+        { name: "Adaeze Josiah", rating: 5, date: "3 weeks ago", text: "Ordered iPhone 14 Pro Max + luxury leather case, delivered in 2hrs. Premium quality, no regrets. Best cell phone & accessory store in Imo!", tags: ["all", "iphone 16"], ownerRes: "Thank you, Ada! Be Loyal to You!" },
+        { name: "Michael Okafor", rating: 4.8, date: "2 weeks ago", text: "Bought Samsung Tab S9 and a rugged case. Smooth transaction, friendly consultation. Accessories collection is elite. Highly recommend BUC.", tags: ["all", "gadget plug"], ownerRes: null },
+        { name: "Chioma Nwachukwu", rating: 5, date: "3 months ago", text: "Incredible after-sales service! My AirPods had a minor issue — replaced immediately without stress. Trusted plug for gadgets and wearables.", tags: ["all", "warranty"], ownerRes: "Customer satisfaction is our cornerstone 💙" },
+        { name: "David Opara", rating: 5, date: "1 week ago", text: "Got iPhone 16 plus + official clear case. Pristine device. The crew at BUC are professional — definitely a high-end atelier!", tags: ["all", "iphone 16"], ownerRes: null },
+        { name: "Peace Ekwueme", rating: 4.5, date: "2 months ago", text: "Very durable gadgets, honored warranty. They also expert advice on accessories. Excellent overall!", tags: ["all", "warranty"] },
+        { name: "Kingsley Eze", rating: 5, date: "5 days ago", text: "New iPad + keyboard folio — my son loves it. This shop is genuine, no refurbished lies. Premium from every angle.", tags: ["all", "gadget plug"], ownerRes: "Transparency matters 🤝" },
+        { name: "Ozioma Victor", rating: 5, date: "3 weeks ago", text: "Store pickup is smooth, I pre-ordered Galaxy Watch 6. Price competitive and they gave additional strap.", tags: ["all"], ownerRes: null },
+        { name: "Precious Nwosu", rating: 5, date: "1 week ago", text: "iPhone 16 deals are unmatched. Got free screen protector & premium case. BUC delivers high-end experience!", tags: ["all", "iphone 16"] }
+    ];
+
+    let currentFilter = "all";
+    let reviewSwiperInstance = null;
+
+    function buildReviewSlides(filter) {
+        const filtered = premiumReviews.filter(r => filter === "all" || r.tags.includes(filter));
+        const slidesHtml = filtered.map(r => {
+            const fullStars = Math.floor(r.rating);
+            const halfStar = (r.rating % 1) !== 0;
+            let starHtml = '';
+            for (let i=0; i<fullStars; i++) starHtml += '<i class="fas fa-star"></i>';
+            if (halfStar) starHtml += '<i class="fas fa-star-half-alt"></i>';
+            return `<div class="swiper-slide review-slide h-auto px-1">
+                <div class="bg-white rounded-3xl p-5 shadow-xl flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-50 to-white rounded-full flex items-center justify-center text-buc-blue text-xl shadow-sm border border-blue-200"><i class="fas fa-crown"></i></div>
+                        <div><h4 class="font-bold">${escapeHtml(r.name)}</h4><div class="text-yellow-500 text-sm">${starHtml} ${r.rating}</div><span class="text-xs text-gray-400">📅 ${escapeHtml(r.date)}</span></div>
+                    </div>
+                    <p class="text-gray-700 text-sm md:text-base">${escapeHtml(r.text)}</p>
+                    ${r.ownerRes ? `<div class="mt-3 bg-blue-50 rounded-xl p-3 text-xs"><i class="fas fa-reply text-buc-blue"></i> <strong>BUC Owner:</strong> ${escapeHtml(r.ownerRes)}</div>` : ''}
+                </div>
+            </div>`;
+        }).join('');
+        document.getElementById('reviewSlidesWrapper').innerHTML = slidesHtml;
+        if (reviewSwiperInstance) { reviewSwiperInstance.update(); reviewSwiperInstance.slideTo(0); }
+        else {
+            reviewSwiperInstance = new Swiper('.reviewSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 16,
+                loop: filtered.length > 2,
+                pagination: { el: '.review-pagination', clickable: true, dynamicBullets: true },
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                autoplay: { delay: 4500, disableOnInteraction: false },
+                breakpoints: { 640: { slidesPerView: 1, spaceBetween: 16 }, 768: { slidesPerView: 2, spaceBetween: 20 }, 1024: { slidesPerView: 3, spaceBetween: 24 } },
+                speed: 600
+            });
+        }
+    }
+
+    function escapeHtml(str) { return str.replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m])); }
+    function initReviewCarousel() {
+        buildReviewSlides("all");
+        document.querySelectorAll('.filter-chip').forEach(chip => {
+            chip.addEventListener('click', function() {
+                document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active', 'bg-buc-blue', 'text-white'));
+                this.classList.add('active', 'bg-buc-blue', 'text-white');
+                currentFilter = this.dataset.filter;
+                buildReviewSlides(currentFilter);
+            });
+        });
+        document.querySelector('.filter-chip.active')?.classList.add('bg-buc-blue', 'text-white');
+    }
+
+    function animateStats() {
+        let startRating = 0, startReview = 0;
+        const targetRating = 4.8, targetReview = 246, duration = 1500, step = 20;
+        const ratingSpan = document.getElementById('ratingCount'), reviewSpan = document.getElementById('reviewCount');
+        let intervalRating = setInterval(() => { startRating += (targetRating/(duration/step)); if(startRating>=targetRating){ ratingSpan.innerText = targetRating; clearInterval(intervalRating); } else ratingSpan.innerText = startRating.toFixed(1); }, step);
+        let intervalRev = setInterval(() => { startReview += Math.ceil(targetReview/(duration/step)); if(startReview>=targetReview){ reviewSpan.innerText = targetReview; clearInterval(intervalRev); } else reviewSpan.innerText = startReview; }, step);
+        document.getElementById('yearCount').innerText = "5+"; document.getElementById('deliveryCount').innerText = "2K+";
+    }
+</script>
+</body>
+</html>
